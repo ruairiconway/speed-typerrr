@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 
 function App() {
     const [ textData, setTextData ] = useState('')
+    const [ timerCount, setCount ] = useState(5)
 
     function handleTextChange(e) {
         const { value } = e.target
@@ -15,6 +16,13 @@ function App() {
         return filteredWordCount
     }
 
+    useEffect(() => {
+        timerCount > 0 &&
+        setTimeout( () => {
+            setCount(prevTimerCount => prevTimerCount - 1)
+        }, 1000)
+    }, [timerCount])
+
     return (
         <div>
             <h1>SPEED TYPERRR</h1>
@@ -23,7 +31,7 @@ function App() {
                 value={textData}
                 onChange={handleTextChange}
             />
-            <h4>TIME: 00:00</h4>
+            <h4>TIME: {timerCount}</h4>
             <button onClick={() => handleWordCount(textData)} type="submit">START</button>
             <h1>WORD COUNT: ???</h1>
         </div>
