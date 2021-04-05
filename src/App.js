@@ -11,25 +11,30 @@ function App() {
         timerCount,
         handleGameStart,
         wordCount
-    } = useWordGame()
+    } = useWordGame(30)
 
     return (
-        <div>
-            <h1>SPEED TYPERRR</h1>
+        <div className="game-wrapper">
+            <h1 className="title">SPEED TYPERRR</h1>
             <textarea
+                className="text-field"
                 ref={textareaRef}
                 name="gameInput"
                 value={textData}
                 onChange={handleTextChange}
                 disabled={!isTimerRunning}
             />
-            <h4>TIME: {timerCount}</h4>
-            <button
-                onClick={handleGameStart} 
-                type="button" 
-                disabled={isTimerRunning}
-            >START</button>
-            <h1>WORD COUNT: {wordCount}</h1>
+            <div className={`console-wrapper${isTimerRunning ? " active" : ""}`}>
+                <h4 className="timer">{timerCount}</h4>
+                <button
+                    className="start-btn"
+                    onClick={handleGameStart} 
+                    type="button" 
+                    disabled={isTimerRunning}
+                >START
+                </button>
+            </div>
+            <h2 className="score">WORD COUNT: {wordCount}</h2>
         </div>
     )
 }
