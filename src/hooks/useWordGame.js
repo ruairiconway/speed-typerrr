@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 
 function useWordGame(startTime = 15) {
-    const [ textData, setTextData ] = useState('')
+    const [ textData, setTextData ] = useState('Hit Start...')
     const [ timerCount, setCount ] = useState(startTime)
     const [ isTimerRunning, setIsTimerRunning ] = useState(false)
     const [ wordCount, setWordCount ] = useState(0)
