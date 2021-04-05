@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 
-function useWordGame() {
-    const START_TIME = 5
+function useWordGame(startTime = 15) {
     const [ textData, setTextData ] = useState('')
-    const [ timerCount, setCount ] = useState(START_TIME)
+    const [ timerCount, setCount ] = useState(startTime)
     const [ isTimerRunning, setIsTimerRunning ] = useState(false)
     const [ wordCount, setWordCount ] = useState(0)
     const textareaRef = useRef(null)
@@ -21,7 +20,7 @@ function useWordGame() {
 
     async function handleGameStart() {   
         setTextData('')
-        setCount(START_TIME)
+        setCount(startTime)
         await setIsTimerRunning(true)
         textareaRef.current.focus()
     }
