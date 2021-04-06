@@ -25,7 +25,7 @@ function App() {
                 disabled={!isTimerRunning}
             />
             <div className={`console-wrapper${isTimerRunning ? " active" : ""}`}>
-                <h4 className="timer">{timerCount}</h4>
+                <h3 className="timer">{timerCount}</h3>
                 <button
                     className="start-btn"
                     onClick={handleGameStart} 
