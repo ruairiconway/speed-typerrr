@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/speed-typerrr/static/css/main.d27c4d45.chunk.css",
+    "main.js": "/speed-typerrr/static/js/main.02ec5029.chunk.js",
+    "main.js.map": "/speed-typerrr/static/js/main.02ec5029.chunk.js.map",
+    "runtime-main.js": "/speed-typerrr/static/js/runtime-main.216aedd5.js",
+    "runtime-main.js.map": "/speed-typerrr/static/js/runtime-main.216aedd5.js.map",
+    "static/js/2.e8591227.chunk.js": "/speed-typerrr/static/js/2.e8591227.chunk.js",
+    "static/js/2.e8591227.chunk.js.map": "/speed-typerrr/static/js/2.e8591227.chunk.js.map",
+    "index.html": "/speed-typerrr/index.html",
+    "static/css/main.d27c4d45.chunk.css.map": "/speed-typerrr/static/css/main.d27c4d45.chunk.css.map",
+    "static/js/2.e8591227.chunk.js.LICENSE.txt": "/speed-typerrr/static/js/2.e8591227.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.216aedd5.js",
+    "static/js/2.e8591227.chunk.js",
+    "static/css/main.d27c4d45.chunk.css",
+    "static/js/main.02ec5029.chunk.js"
+  ]
+}
