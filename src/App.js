@@ -31,10 +31,10 @@ function App() {
                     onClick={handleGameStart} 
                     type="button" 
                     disabled={isTimerRunning}
-                >START
+                >Start
                 </button>
             </div>
-            <h2 className="score">WORD COUNT: {wordCount}</h2>
+            <h2 className="score">WORDS: {wordCount}</h2>
         </div>
     )
 }
