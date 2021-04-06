@@ -2,7 +2,6 @@ import React from 'react'
 import useWordGame from './hooks/useWordGame'
 import GameConsole from './components/GameConsole'
 import GameArea from './components/GameArea'
-import './App.css';
 
 function App() {
     const {
