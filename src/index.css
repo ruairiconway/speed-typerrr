@@ -1,7 +1,27 @@
-/* 
+/* ============== TYPESTYLES ==============
 font-family: 'Roboto', sans-serif;
 font-family: 'Zilla Slab', serif; 
 */
+
+h1,
+h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+h3,
+textarea,
+button {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+/* ============== BASICS ============== */
 
 * {
     box-sizing: border-box;
@@ -20,26 +40,18 @@ body {
     margin: 0;
 }
 
-h1,
-h2 {
-    margin: 0;
-    font-family: 'Zilla Slab', serif;
-    letter-spacing: 2px;
-    font-size: 2rem;
-}
-
-textarea,
-h4,
-button {
-    margin: 0;
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.25rem;
-    letter-spacing: 1px;
-}
-
 #root {
     height: 100%;
 }
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+
+/* ============== APP ============== */
 
 .game-wrapper {
     height: 100%;
@@ -49,12 +61,18 @@ button {
     grid-template: 20% 3fr repeat(2, 1fr) / 1fr;
 }
 
+
+/* ============== TITLE ============== */
+
 .title {
     align-self: center;
     justify-self: center;
     text-align: center;
     cursor: default;
 }
+
+
+/* ============== GAME ============== */
 
 .text-field {
     margin: 0 0.75rem;
@@ -73,6 +91,9 @@ button {
     background: #191919;
     color: #FFF;
 }
+
+
+/* ============== CONSOLE ============== */
 
 .console-wrapper {
     align-self: end;
@@ -127,6 +148,9 @@ button {
     background: #191919;
     color: #FFF;
 }
+
+
+/* ============== SCORE ============== */
 
 .score {
     align-self: center;
